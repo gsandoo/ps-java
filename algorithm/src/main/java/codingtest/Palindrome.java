@@ -1,7 +1,8 @@
-import java.util.Arrays;
+package codingtest;
+
 import java.util.Scanner;
 
-public class Main {
+public class Palindrome {
 
     public String solution(int n , String[] s) {
         String answer = null;
@@ -20,7 +21,7 @@ public class Main {
     };
 
     public static void main(String[] args) {
-        Main T = new Main();
+        Palindrome T = new Palindrome();
         Scanner kb = new Scanner(System.in);
         int m = kb.nextInt();
         for (int i = 0 ; i < m ; i++){
@@ -35,3 +36,4 @@ public class Main {
         }
     }
 }
+
