@@ -1,37 +1,51 @@
-import java.util.Arrays;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-    public String solution(int n , String[] s) {
-        String answer = null;
-        for(int i = 0 ; i < s.length ; i++){
-            for (int j = 0 ; j < s.length ; j ++){
-                if (i != j){
-                    String a= s[i]+s[j];
-                    String b = new StringBuilder(a).reverse().toString();
-                    if (a.equals(b)){
-                        answer = a;
+        int T = Integer.parseInt(br.readLine());
+
+        int k;
+
+        for (int i = 0; i < T; i++) {
+            k = Integer.parseInt(br.readLine());
+
+            String[] arr = new String[k];
+
+            for (int j = 0; j < k; j++) {
+                arr[j] = br.readLine();
+            }
+
+            String check = "";
+
+            int checkNum = 0;
+
+            Loop1:
+            for (int j = 0; j < k; j++) {
+                for (int l = i + 1; l < k; l++) {
+                    if (j == l) {
+                        break;
                     }
+                    check = arr[j];
+                    check += arr[l];
+
+                    String palenCheck = new StringBuilder(check).reverse().toString();
+
+                    if (check.equals(palenCheck)) {
+                        System.out.println(check);
+                        checkNum++;
+                        break Loop1;
+                    }
+                    check = "";
+
                 }
             }
-        }
-        return  answer;
-    };
-
-    public static void main(String[] args) {
-        Main T = new Main();
-        Scanner kb = new Scanner(System.in);
-        int m = kb.nextInt();
-        for (int i = 0 ; i < m ; i++){
-            int n = kb.nextInt();
-            String[] s = new String[n];
-            for (int j = 0 ; j < n ; j++){
-                s[j] = kb.next();
+            if (checkNum == 0) {
+                System.out.println(checkNum);
             }
-            if (T.solution(n,s) == null){
-                System.out.println(0);
-            }else System.out.println(T.solution(n,s));
         }
     }
 }
