@@ -6,28 +6,24 @@ import java.util.Scanner;
 public class cutstring {
 
     public int solution(String s) {
-        String as = s;
-        int answer = 0 , i = 0 , c=0 , d = 1;
-        while (!as.equals("")){
-            if (as.length() <=1){
-                as = as.substring(c);
+        int answer = 0 ,lt = 0  ,c = 1 , nc=0 ;
+        if (s.length() <= 1) {
+            answer++;
+            return answer;
+        }
+        for (int rt = 1  ; rt < s.length() ; rt++){
+            char x = s.charAt(lt);
+            if (x != s.charAt(rt))nc++;
+            else c++;
+            if (c == nc){
                 answer++;
-                break;
-            }
-            if (as.charAt(i) != as.charAt(i+1)){
-                c++;
-            }else {
-                i++;
-                d++;
-            }
-            if (c == d){
-                as = as.substring(c+1);
-                answer++;
-                d=1;
-                c=0;
+                s = s.substring(rt+1);
+                rt=0;
+                c=1;
+                nc=0;
             }
         }
-
+        if (s.length() >=1 ) answer++;
         return  answer;
     };
 
