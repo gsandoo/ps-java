@@ -2,7 +2,8 @@ package codingtest;
 
 import java.util.Scanner;
 
-public class string {
+// 문자열
+public class week2_1 {
     public int solution(String x , String y) {
         int answer=0 , count = Integer.MIN_VALUE;
         if (x.length() != y.length()){
@@ -28,7 +29,7 @@ public class string {
     };
 
     public static void main(String[] args) {
-        string T = new string();
+        week2_1 T = new week2_1();
         Scanner kb = new Scanner(System.in);
         String x = kb.next();
         String y = kb.next();
