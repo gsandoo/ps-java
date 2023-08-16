@@ -1,9 +1,9 @@
 package codingtest;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class cutstring {
+// 문자열 나누기
+public class week2_4 {
 
     public int solution(String s) {
         int answer = 0 ,lt = 0  ,c = 1 , nc=0 ;
@@ -28,7 +28,7 @@ public class cutstring {
     };
 
     public static void main(String[] args) {
-        cutstring T = new cutstring();
+        week2_4 T = new week2_4();
         Scanner kb = new Scanner(System.in);
         String s = kb.next();
         System.out.println(T.solution(s));

@@ -2,7 +2,8 @@ package codingtest;
 
 import java.util.Scanner;
 
-public class JadenCase {
+// JadenCase
+public class week2_2 {
     public String solution(String s) {
         String answer = "";
         String[]str = s.toLowerCase().split("");
@@ -16,7 +17,7 @@ public class JadenCase {
     };
 
     public static void main(String[] args) {
-        JadenCase T = new JadenCase();
+        week2_2 T = new week2_2();
         Scanner kb = new Scanner(System.in);
         String s = kb.nextLine();
         System.out.println(T.solution(s));
