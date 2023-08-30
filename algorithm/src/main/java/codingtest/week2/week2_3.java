@@ -1,4 +1,4 @@
-package codingtest;
+package codingtest.week2;
 
 import java.util.Scanner;
 
@@ -25,11 +25,10 @@ public class week2_3 {
             }else if (s.charAt(0)=='f') {
                 if (s.charAt(0+1)=='o'){
                     t += '4';
-                    s=s.substring(4);
                 }else {
                     t += '5';
-                    s=s.substring(4);
                 }
+                s=s.substring(4);
             }else if (s.charAt(0)=='s') {
                 if (s.charAt(0+1)=='i'){
                     t += '6';
