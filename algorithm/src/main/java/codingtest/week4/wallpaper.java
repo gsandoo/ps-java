@@ -1,7 +1,4 @@
-package codingtest;
-
-import java.util.Arrays;
-import java.util.Scanner;
+package codingtest.week4;
 
 public class wallpaper {
     public int[] solution(String[] wallpaper) {
