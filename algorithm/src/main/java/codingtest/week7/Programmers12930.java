@@ -3,6 +3,7 @@ package codingtest.week7;
 public class Programmers12930 {
     public String solution(String s) {
         String answer = "";
+
         int count =0 ;
         String [] st = s.split("");
         for (int i = 0 ; i < s.length();  i++){
