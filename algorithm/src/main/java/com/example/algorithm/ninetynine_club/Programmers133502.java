@@ -1,6 +1,5 @@
 package com.example.algorithm.ninetynine_club;
 
-import java.util.ArrayList;
 import java.util.Stack;
 
 public class Programmers133502 {
