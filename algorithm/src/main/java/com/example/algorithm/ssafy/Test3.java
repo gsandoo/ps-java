@@ -1,8 +1,10 @@
 package com.example.algorithm.ssafy;
 
 import java.util.*;
-import java.util.stream.IntStream;
 
+/**
+ * 19113. 식료품 가게
+ */
 public class Test3 {
     public static void main(String[] args) {
 
@@ -35,12 +37,13 @@ public class Test3 {
                 int val  = Integer.parseInt(temp.get(temp.size()-1));
                 int dis = val/4*3;
                 if (temp.contains(String.valueOf(dis))){
-                    resultList.add(String.valueOf(dis));
+                    resultList.add(String.valueOf((dis)));
                     temp.remove(String.valueOf(val));
                     temp.remove(String.valueOf(dis));
                 }
             }
             Collections.sort(resultList);
+
             answerList.add("#"+num+" ");
             answerList.addAll(resultList);
             resultList.clear();
