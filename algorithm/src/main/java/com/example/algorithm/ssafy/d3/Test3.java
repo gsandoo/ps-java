@@ -1,4 +1,4 @@
-package com.example.algorithm.ssafy;
+package com.example.algorithm.ssafy.d3;
 
 import java.util.*;
 import java.util.stream.IntStream;
