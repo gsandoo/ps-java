@@ -1,4 +1,4 @@
-package com.example.algorithm.ssafy;
+package com.example.algorithm.ssafy.D3;
 
 /**
  * 1859. 백만 장자 프로젝트
@@ -58,8 +58,6 @@ public class Test4 {
         for (int i = 0 ; i < T  ; i++){
             sc.nextLine();
             int num = sc.nextInt();
-
-
 
             sc.nextLine();
             String number = sc.nextLine();
