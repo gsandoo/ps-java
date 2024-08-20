@@ -1,4 +1,4 @@
-package com.algorithm.boj.testcase.gold.iv.Gold_iv_1753;
+package com.algorithm.boj.testcase.gold.iv_1753;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,8 +6,8 @@ import java.util.PriorityQueue;
 import java.util.Scanner;
 
 class Edge implements Comparable<Edge>{
-    public int vex;
-    public int cost;
+    public int vex; // 노드 번호
+    public int cost; // 비용
 
     public Edge(int vex, int cost){
         this.vex = vex;
@@ -35,6 +35,7 @@ public class Main {
             int now = tmp.vex;
             int nowCost = tmp.cost;
             if (nowCost > dis[now]) continue;
+            // 중요. "노드 비용 > 노드 까지 발생 비용" 이면 굳이 for문을 돌 필요 없다!
             for (Edge ob : graph.get(now)){
                 if (dis[ob.vex] > nowCost+ob.cost){
                     dis[ob.vex] = nowCost + ob.cost;
@@ -51,9 +52,9 @@ public class Main {
         graph = new ArrayList<>();
 
         Scanner scanner = new Scanner(System.in);
-        V = scanner.nextInt();
-        E = scanner.nextInt();
-        K = scanner.nextInt();
+        V = scanner.nextInt(); // 5
+        E = scanner.nextInt(); // 6
+        K = scanner.nextInt(); // 1
 
         for (int i = 0 ; i <= V ; i++){
             graph.add(new ArrayList<Edge>());
