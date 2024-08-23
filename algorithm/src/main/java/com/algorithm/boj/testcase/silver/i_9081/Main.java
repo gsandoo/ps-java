@@ -3,61 +3,57 @@ package com.algorithm.boj.testcase.silver.i_9081;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 
 public class Main {
 
-    public static ArrayList<String>  solution(ArrayList<String> words){
-
-        ArrayList<String> answer = new ArrayList<>();
-
-        for (String word : words){
-            boolean changed = false;
-            int index = 0 ;
-
-            char[] wchar  = word.toCharArray();
-
-            for (int i = wchar.length-1 ; i > 0 ; i--){
-
-                for (int j = i-1 ; j >= 0 ; j-- ){
-                    if (wchar[i] > wchar[j]){
-                        char tmp = wchar[i];
-                        wchar[i] = wchar[j];
-                        wchar[j] = tmp;
-
-                        changed = true;
-                        index = j+1;
-                    }
-                    if (changed)break;
-                }
-                if (changed) break;
-            }
-            if (changed){
-                Arrays.sort(wchar,index,wchar.length);
-            }
-            answer.add(String.valueOf(wchar));
-
-        }
-        return answer;
-    }
 
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder answer = new StringBuilder();
 
-        ArrayList<String> words = new ArrayList<>();
 
         int T = Integer.parseInt(br.readLine());
 
         for (int i = 0 ; i < T ; i++){
             String token = br.readLine();
-            words.add(token);
+
+            int index = -1, index2= 0 ;
+
+            char[] wchar  = token.toCharArray();
+
+            for (int k = wchar.length-1 ; k > 0 ; k--){
+                if (wchar[k] > wchar[k-1]) {
+                    index = k-1;
+                    break;
+                }
+            }
+            if (index == -1){
+                for (int l = 0; l < wchar.length ; l++){
+                    answer.append(wchar[l]);
+                }
+                answer.append("\n");
+            } else {
+                for (int j = wchar.length-1 ; j >=0 ; j-- ){
+                    if (wchar[j] > wchar[index]) {
+                        index2 = j;
+                        break;
+                    }
+                }
+                char temp = wchar[index2];
+                wchar[index2] = wchar[index];
+                wchar[index] = temp;
+                Arrays.sort(wchar,index+1,wchar.length);
+
+                for (int l = 0; l < wchar.length ; l++){
+                    answer.append(wchar[l]);
+                }
+                answer.append("\n");
+            }
         }
 
-        words = solution(words);
-
-        for (String word : words) System.out.println(word + '\n');
+        System.out.println(answer.toString());
     }
 }
