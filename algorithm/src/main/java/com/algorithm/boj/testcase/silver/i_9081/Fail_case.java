@@ -51,8 +51,6 @@ public class Fail_case {
             }
 
         }
-
         System.out.println(answer);
-
     }
 }
