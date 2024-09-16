@@ -7,6 +7,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 
+/**
+ * Author    : Kang San Ah
+ * Date      : 2024.09.16(Mon)
+ * Runtime   : 1 sec
+ * Memory    : 256 MB
+ * Algorithm : 정렬 문제(Compared To 활용 문제)
+ */
+
 public class Main {
 
     static class Point implements Comparable<Point>{
