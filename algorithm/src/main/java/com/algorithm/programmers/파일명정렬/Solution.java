@@ -1,4 +1,4 @@
-package com.algorithm.programmers.programmers_17686;
+package com.algorithm.programmers.파일명정렬;
 
 import java.util.Arrays;
 import java.util.Comparator;

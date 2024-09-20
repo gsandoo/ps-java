@@ -1,4 +1,4 @@
-package com.algorithm.programmers.programmers_42746;
+package com.algorithm.programmers.가장큰수;
 
 import java.util.Arrays;
 

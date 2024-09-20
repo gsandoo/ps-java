@@ -1,4 +1,4 @@
-package com.algorithm.programmers.programmers_176962;
+package com.algorithm.programmers.과제진행하기;
 
 import java.util.*;
 
