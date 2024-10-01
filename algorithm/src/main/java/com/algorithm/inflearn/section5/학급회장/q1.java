@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.section5.q1;
+package com.algorithm.inflearn.section5.학급회장;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.section4;
+package com.algorithm.inflearn.section4.최대매출;
 
 import java.util.HashMap;
 

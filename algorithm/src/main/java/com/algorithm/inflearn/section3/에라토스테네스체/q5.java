@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.section3;
+package com.algorithm.inflearn.section3.에라토스테네스체;
 
 import java.util.*;
 

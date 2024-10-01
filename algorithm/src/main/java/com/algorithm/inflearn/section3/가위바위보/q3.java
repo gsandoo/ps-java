@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.section3;
+package com.algorithm.inflearn.section3.가위바위보;
 
 import java.util.*;
 

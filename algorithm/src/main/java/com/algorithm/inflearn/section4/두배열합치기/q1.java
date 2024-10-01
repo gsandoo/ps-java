@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.section4;
+package com.algorithm.inflearn.section4.두배열합치기;
 import java.util.HashMap;
 
 // 해시

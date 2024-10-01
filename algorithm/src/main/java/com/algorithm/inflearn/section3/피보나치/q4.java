@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.section3;
+package com.algorithm.inflearn.section3.피보나치;
 
 import java.util.*;
 

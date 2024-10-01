@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.section4;
+package com.algorithm.inflearn.section4.공통원소구하기;
 
 import java.util.HashMap;
 // 아나그램
