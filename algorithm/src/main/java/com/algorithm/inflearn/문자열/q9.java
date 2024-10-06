@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.배열;
+package com.algorithm.inflearn.문자열;
 import java.util.Scanner;
 
 // 숫자만 추출하기

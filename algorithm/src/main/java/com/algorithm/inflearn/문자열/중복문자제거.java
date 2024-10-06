@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.배열;
+package com.algorithm.inflearn.문자열;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

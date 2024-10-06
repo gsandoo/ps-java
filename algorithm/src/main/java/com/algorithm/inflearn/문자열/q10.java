@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.배열;
+package com.algorithm.inflearn.문자열;
 import java.util.Scanner;
 
 // 가장 짧은 문자거리
