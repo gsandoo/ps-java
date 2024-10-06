@@ -16,8 +16,7 @@ public class Main {
             if (cha == '(') stack.push(cha);
             else {
                 if (stack.isEmpty()) {
-                    answer = "NO";
-                    break;
+                    return  "NO";
                 } else {
                     stack.pop();
                 }
