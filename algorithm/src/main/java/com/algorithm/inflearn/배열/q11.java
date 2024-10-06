@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.section1;
+package com.algorithm.inflearn.배열;
 import java.util.ArrayList;
 import java.util.Scanner;
 
