@@ -14,7 +14,6 @@ public class 단어뒤집기 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
 
-        StringBuilder sb ;
         List<String> list = new ArrayList<>();
         for (int i = 0 ; i < N ; i++){
            list.add(new StringBuilder(br.readLine()).reverse().toString());
