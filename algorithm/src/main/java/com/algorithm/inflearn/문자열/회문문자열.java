@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 // 회문 문자열 문제 -> lt,rt 사용하지말고 sb 활용(오답의 수를 최소화 가능)
 public class 회문문자열 {
 
-    // 1번째 방법 , lt, rt 사용 / 오답 처리
+    // 1번째 방법 , lt, rt 사용 / 오답 처리 발생
 //    public static void main(String[] args)throws IOException {
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        char[] words = br.readLine().toLowerCase().toCharArray();
