@@ -1,12 +1,19 @@
+/**
+ * Author    : Kang San Ah
+ * Date      : 2024.11.13(wed)
+ * Runtime   : 1 sec
+ * Memory    : 256 MB
+ * Key point : 회문 문자열 문제 -> lt,rt 사용하지말고 sb 활용(오답의 수를 최소화 가능)
+ * Algorithm : 구현
+ */
+
 package com.algorithm.inflearn.문자열;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// 회문 문자열
-// 핵심:
-// 회문 문자열 문제 -> lt,rt 사용하지말고 sb 활용(오답의 수를 최소화 가능)
+
 public class 회문문자열 {
 
     // 1번째 방법 , lt, rt 사용 / 오답 처리 발생
