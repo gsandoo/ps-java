@@ -19,7 +19,7 @@ public class 숫자만추출 {
         StringBuilder sb = new StringBuilder();
         char[] str = br.readLine().toLowerCase().replaceAll("[a-z]" ,"").toCharArray();
         for (char x : str){
-            if(sb.length()== 0 && Integer.parseInt(String.valueOf(x)) == 0) continue;
+            if(sb.length() == 0 && Integer.parseInt(String.valueOf(x)) == 0) continue;
             sb.append(Integer.parseInt(String.valueOf(x)));
         }
         System.out.println(sb.toString());
