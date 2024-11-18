@@ -1,4 +1,4 @@
-package com.algorithm.boj.testcase.gold;
+package com.algorithm.boj.gold;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

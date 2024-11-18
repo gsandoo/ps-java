@@ -1,4 +1,4 @@
-package com.algorithm.boj.testcase.gold.iv_1753;
+package com.algorithm.boj.gold.iv_1753;
 
 import java.util.ArrayList;
 import java.util.Arrays;

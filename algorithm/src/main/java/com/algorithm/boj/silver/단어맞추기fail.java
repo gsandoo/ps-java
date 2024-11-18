@@ -1,4 +1,4 @@
-package com.algorithm.boj.testcase.silver;
+package com.algorithm.boj.silver;
 
 import java.io.BufferedReader;
 import java.io.IOException;

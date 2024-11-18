@@ -1,4 +1,4 @@
-package com.algorithm.boj.testcase.gold.v_1052;
+package com.algorithm.boj.gold.v_1052;
 
 import java.io.BufferedReader;
 import java.io.IOException;
