@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.section2;
+package com.algorithm.inflearn.배열;
 import java.util.*;
 
 // 에라토스테네스 체 -> 소수

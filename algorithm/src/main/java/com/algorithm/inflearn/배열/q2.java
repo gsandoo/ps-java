@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.section2;
+package com.algorithm.inflearn.배열;
 import java.util.*;
 
 public class q2 {
