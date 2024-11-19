@@ -1,3 +1,13 @@
+/**
+ * Author    : Kang San Ah
+ * Date      : 2024.11.18(mon)
+ * Runtime   : 1 sec
+ * Memory    : 256 MB
+ * Key point : 스택 가장 기본 문제
+ * Algorithm : 스택
+ */
+
+
 package com.algorithm.inflearn.스택과큐;
 
 import java.io.BufferedReader;
