@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.section9.q2;
+package com.algorithm.inflearn.DFS_BFS_활용.q2;
 
 import java.util.Scanner;
 

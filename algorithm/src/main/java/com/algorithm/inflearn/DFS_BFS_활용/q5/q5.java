@@ -1,4 +1,4 @@
-package com.algorithm.inflearn.section9.q5;
+package com.algorithm.inflearn.DFS_BFS_활용.q5;
 
 import java.util.ArrayList;
 import java.util.Arrays;
