@@ -1,6 +1,5 @@
 package com.algorithm.boj.ac.bronze;
 
-import org.springframework.boot.autoconfigure.web.ServerProperties;
 
 import java.io.BufferedReader;
 import java.io.IOException;
