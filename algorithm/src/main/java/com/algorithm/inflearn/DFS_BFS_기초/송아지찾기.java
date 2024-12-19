@@ -40,8 +40,8 @@ public class 송아지찾기 {
     public static void main(String[] args)throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        N = Integer.parseInt(st.nextToken()); // 현재 위치
-        M = Integer.parseInt(st.nextToken()); // 목표 위치
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
         visited = new boolean[10001];
 
         System.out.println(bfs(1, N));
